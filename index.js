@@ -114,7 +114,9 @@ app.get('/api', (req, res)=>{
         res.status(501).json({Message: error})
     }
 })
-
+ app.get('/', (req, res)=>{
+    res.send(`Welcome to my Page`)
+ })
 app.listen(PORT,()=>{
     console.log(`server has benn successfully started on ${PORT}`);
     
